@@ -1,0 +1,60 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.netflix {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    padding: 10px;
+    height: 115px;
+    width: 400px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-image,
+.download-gif {
+    height: 80%;
+}
+
+.text {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.text-name {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.text-download {
+    color: #0171eb;
+}
