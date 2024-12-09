@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table with Filters</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        select {
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sales Data Table with Filters</h1>
+
+    <!-- Dropdown Filters -->
+    <label for="regionFilter">Region Filter:</label>
+    <select id="regionFilter">
+        <option value="all">All</option>
+    </select>
+
+    <label for="modelFilter">Model Filter:</label>
+    <select id="modelFilter">
+        <option value="all">All</option>
+    </select>
+
+    <!-- Table -->
+    <table id="salesTable">
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Model</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be inserted dynamically -->
+        </tbody>
+    </table>
+
+    <script src="table2.js"></script>
+</body>
+</html>
